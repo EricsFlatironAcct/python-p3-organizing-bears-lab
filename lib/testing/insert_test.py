@@ -16,7 +16,7 @@ cursor.executescript(insert_as_string)
 
 class TestInsert:
     '''Statement in insert.sql'''
-
+    
     def test_inserts_eight_bears_into_table(self):
         '''inserts 8 bears into bears table.'''
         result = cursor.execute("SELECT COUNT(*) FROM bears;")
